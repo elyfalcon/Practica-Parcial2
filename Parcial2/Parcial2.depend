@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1529870055 source:c:\eli\utn\parcial2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"tools.h"
+
+1529870099 source:c:\eli\utn\parcial2\tools.c
+	<stdio.h>
+	<stdlib.h>
+
+1529846729 source:c:\eli\utn\parcial2\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529342408 c:\eli\utn\parcial2\arraylist.h
+
+1529870055 c:\eli\utn\parcial2\tools.h
+

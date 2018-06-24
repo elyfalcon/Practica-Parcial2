@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "ArrayList.h"
+#include "tools.h"
+
+int main()
+{
+    char seguir='s';
+    int opcion=0;
+    ShowMenu("1: Tramite Urgente\n2: Tramite Regular\n3: Proximo Cliente\n4: Listar\n5: Informar");
+    
+
+    
+    
+    
+    return 0;
+}
