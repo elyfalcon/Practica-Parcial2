@@ -1,0 +1,19 @@
+#ifndef ESTRUCTURA_H_INCLUDED
+
+#include ESTRUCTURA_H_INCLUDED
+
+struct typedef
+{
+    char nombre [25];
+    int edad; 
+    int legajo;
+    char sexo [1];
+};eAlumno;
+
+
+
+
+
+
+
+#endif // ESTRUCTURA_H_DECLARED

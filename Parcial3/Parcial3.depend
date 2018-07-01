@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1529846729 source:c:\eli\utn\2do parcial\parcial3\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529342408 c:\eli\utn\2do parcial\parcial3\arraylist.h
+
+1530472557 source:c:\eli\utn\2do parcial\parcial3\dato.c
+	<stdio.h>
+	"Dato.h"
+
+1527350666 c:\eli\utn\2do parcial\parcial3\dato.h
+
+1530482406 source:c:\eli\utn\2do parcial\parcial3\estructura.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Estructura.h"
+
+1530472557 source:c:\eli\utn\2do parcial\parcial3\tools.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Dato.h"
+
+1530486655 source:c:\eli\utn\2do parcial\parcial3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"tools.h"
+	"Estructura.h"
+	"Archivos.h"
+
+1529870055 c:\eli\utn\2do parcial\parcial3\tools.h
+
+1530482029 c:\eli\utn\2do parcial\parcial3\estructura.h
+
+1530486655 c:\eli\utn\2do parcial\parcial3\archivos.h
+
+1530487772 source:c:\eli\utn\2do parcial\parcial3\archivos.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"tools.h"
+	"Estructura.h"
+	"Dato.h"
+	"Archivos.h"
+
