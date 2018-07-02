@@ -23,7 +23,7 @@ int main()
 
         while(seguir=='S')
         {
-            ShowMenu("1: Cargar el archivo\n2: Listar ordenados por edad\n");
+            ShowMenu("1: Cargar el archivo\n2: Listar ordenados por edad\n3: Listar Alumnos\n4: filtro\n");
             scanf("%d",&opcion);
             ValidaMenu(opcion,0,2);
             switch(opcion)
@@ -35,12 +35,17 @@ int main()
                    ListaAux=ListarPorEdad(ListaAlumnos,1);
                    if(ListaAux !=NULL)
                    {
-                       MostrarElementos(ListaAlumnos,0,ListaAlumnos->len(ListaAlumnos));
+                       MostrarElementos(ListaAux,0,ListaAux->len(ListaAux));
                    }
                    else
                     printf("No hay nada para mostrar\n");
-
                 break;
+                case 3:
+                    MostrarElementos(ListaAlumnos,0,ListaAlumnos->len(ListaAlumnos));
+                    break;
+                case 4:
+                    ListaAux=al_filter(ListaAlumnos , funcionQuefiltra);
+                    break;
                 case 0:
                 seguir='n';
                 break;

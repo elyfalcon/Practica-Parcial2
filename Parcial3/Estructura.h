@@ -15,6 +15,7 @@ ArrayList* clonaOrdenado(ArrayList *this,int (*pFunc)(void* ,void*),int orden);
 ArrayList* ListarPorEdad(ArrayList *this,int orden);
 void MostrarElemento(ArrayList *this,int desde, int hasta);
 int Muestra1UnElemento(eAlumno * record);
+int funcionQuefiltra(void* item);
 
 
 

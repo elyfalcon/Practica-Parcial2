@@ -63,16 +63,16 @@
 
 1527350666 c:\eli\utn\2do parcial\practica-parcial2\parcial3\dato.h
 
-1530496589 source:c:\eli\utn\2do parcial\practica-parcial2\parcial3\estructura.c
+1530500416 source:c:\eli\utn\2do parcial\practica-parcial2\parcial3\estructura.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"ArrayList.h"
 	"Estructura.h"
 
-1530496445 c:\eli\utn\2do parcial\practica-parcial2\parcial3\estructura.h
+1530499953 c:\eli\utn\2do parcial\practica-parcial2\parcial3\estructura.h
 
-1530497721 source:c:\eli\utn\2do parcial\practica-parcial2\parcial3\main.c
+1530500464 source:c:\eli\utn\2do parcial\practica-parcial2\parcial3\main.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"

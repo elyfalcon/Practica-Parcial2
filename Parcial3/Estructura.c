@@ -41,6 +41,32 @@ int Alumno_setName(eAlumno* this, const char* name)
     strcpy(this->nombre, name);
     return 0;
 }
+int get_Edad(eAlumno * alum)
+{
+    int retorno;
+    retorno =alum->edad;
+    return retorno;
+}
+char get_Nombre(eAlumno * alum)
+{
+    char retorno;
+    if(alum !=NULL)
+    {
+        retorno=alum->nombre;
+    }
+    return retorno;
+}
+char get_Sexo(eAlumno * alum)
+{
+    char retorno;
+    if(alum !=NULL)
+    {
+        retorno=alum->sexo;
+    }
+    return retorno;
+}
+
+
 int CompararEdad(void* eAlumno1,void* eAlumno2)
 {
     int retorno=-1;
@@ -101,6 +127,41 @@ void MostrarElementos(ArrayList *this,int desde, int hasta)
         system("pause");
     }
 }
+ArrayList* al_filter(ArrayList* listln , int (*functionFilter)(void*))//agregada
+{
+    ArrayList* ListaAuxiliar;
+    ListaAuxiliar=al_newArrayList();
+    int i;
+
+    if(listln!=NULL)
+    {
+        if(ListaAuxiliar!=NULL )
+        {
+            for(i=0;i<listln->len(listln);i++)
+            {
+                if(functionFilter(listln->get(listln,i))==1)
+                {
+                    ListaAuxiliar->add(listln,listln->get(listln,i));
+                }
+
+            }//fin for
+        }
+    }//fin listln
+    return ListaAuxiliar;
+
+int funcionQuefiltra(void* item)
+{
+ int retorno=0;
+ eAlumno *aux_alumno;
+ aux_alumno=(eAlumno * ) item;
+ if(get_edad(aux_alumno)>30)
+ {
+     retorno=1;
+ }
+ return retorno;
+}
+
+}
 /*int CompararElementos(ArrayList *this,int orden)
 {
  void* pElement;
@@ -145,5 +206,42 @@ void MostrarElementos(ArrayList *this,int desde, int hasta)
     }
     return ListaOrdenada;
 }*/
+int persona_comparaNombre(void* pEmployeeA,void* pEmployeeB)
+{
+    int retorno=0;
+    if (strcmp(((Employee*)pEmployeeA)->name,((Employee*)pEmployeeB)->name)==1)
+    {
+      retorno=1;
+    }
+        if (strcmp(((Employee*)pEmployeeA)->name,((Employee*)pEmployeeB)->name)==-1)
+    {
+      retorno=-1;
+
+    }
+    return retorno;
+
+}
+int persona_compareDNI(void* pEmployeeA,void* pEmployeeB)
+
+{
+
+    int retorno=0;
+
+    if (strcmp(((Employee*)pEmployeeA)->dni,((Employee*)pEmployeeB)->dni)==1)
+    {
+
+      retorno=1;
+
+    }
+
+        if (strcmp(((Employee*)pEmployeeA)->dni,((Employee*)pEmployeeB)->dni)==-1)
+    {
+
+      retorno=-1;
+    }
+    return retorno;
+
+}
+
 
 
