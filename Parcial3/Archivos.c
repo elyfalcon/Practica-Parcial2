@@ -174,4 +174,44 @@ int cargarDesdeArchivo(ArrayList *this,const char* nombre)
 	return flag;
 
 }
+void CrearListado(EMovie *peli,int cant)
+{
+     int i;
+     FILE *f;
+     f=fopen("Peliculas.txt", "w");
 
+     if(f == NULL)
+     {
+          printf("No se pudo abrir el archivo\n");
+
+     }
+
+     else
+
+     {
+         fprintf(f,"Listado de Peliculas\n\n\n");
+
+         fprintf(f,"-----------------------------------------------------------------\n");
+
+         fprintf(f,"Titulo             Descripcion       Genero       Duracion       Puntaje \n");
+
+         fprintf(f,"-----------------------------------------------------------------\n");
+
+         for(i=0; i<cant; i++)
+         {
+                if(peli[i].id != 0)
+                  {
+
+                  fprintf(f,"%s\t    %s %s\t\%d\t%d\n", peli[i].titulo, peli[i].descripcion, peli[i].genero, peli[i].duracion,peli[i].puntaje);
+
+                  }
+         }
+      }
+
+      fclose(f);
+
+      printf("Listado creado con exito\n");
+
+      system("pause");
+
+}
