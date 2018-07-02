@@ -174,3 +174,4 @@ int cargarDesdeArchivo(ArrayList *this,const char* nombre)
 	return flag;
 
 }
+

@@ -49,3 +49,53 @@
 	"Dato.h"
 	"Archivos.h"
 
+1529846729 source:c:\eli\utn\2do parcial\practica-parcial2\parcial3\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529342408 c:\eli\utn\2do parcial\practica-parcial2\parcial3\arraylist.h
+
+1530472557 source:c:\eli\utn\2do parcial\practica-parcial2\parcial3\dato.c
+	<stdio.h>
+	"Dato.h"
+
+1527350666 c:\eli\utn\2do parcial\practica-parcial2\parcial3\dato.h
+
+1530496589 source:c:\eli\utn\2do parcial\practica-parcial2\parcial3\estructura.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Estructura.h"
+
+1530496445 c:\eli\utn\2do parcial\practica-parcial2\parcial3\estructura.h
+
+1530497721 source:c:\eli\utn\2do parcial\practica-parcial2\parcial3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"tools.h"
+	"Estructura.h"
+	"Archivos.h"
+
+1529870055 c:\eli\utn\2do parcial\practica-parcial2\parcial3\tools.h
+
+1530490295 c:\eli\utn\2do parcial\practica-parcial2\parcial3\archivos.h
+
+1530472557 source:c:\eli\utn\2do parcial\practica-parcial2\parcial3\tools.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Dato.h"
+
+1530492769 source:c:\eli\utn\2do parcial\practica-parcial2\parcial3\archivos.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"tools.h"
+	"Estructura.h"
+	"Dato.h"
+	"Archivos.h"
+

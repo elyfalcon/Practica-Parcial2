@@ -4,7 +4,8 @@
 #include "tools.h"
 #include "Estructura.h"
 #include "Archivos.h"
-#define NOM_ARCHIVO "alumnos.cvs"
+//#define NOM_ARCHIVO "alumnos.cvs"
+#define NOM_ARCHIVO "alumnos.csv"
 
 int main()
 {
@@ -14,26 +15,29 @@ int main()
 
     ArrayList *ListaAlumnos;
     ListaAlumnos=al_newArrayList();
+    ArrayList *ListaAux;
+    ListaAux=al_newArrayList();
 
     if(ListaAlumnos !=NULL)
     {
 
         while(seguir=='S')
         {
-        ShowMenu("1: Cargar el archivo\n2: Listar ordenados por edad\n");
-        scanf("%d",&opcion);
-        ValidaMenu(opcion,1,2);
-        switch(opcion)
-        {
-        case 1:
-            cargarDesdeArchivo(ListaAlumnos,NOM_ARCHIVO);
-            break;
-        case 2:
-
-            break;
-        case 3:
-            opcion='N';
-            break;
+            ShowMenu("1: Cargar el archivo\n2: Listar ordenados por edad\n");
+            scanf("%d",&opcion);
+            ValidaMenu(opcion,1,2);
+            switch(opcion)
+            {
+                case 1:
+                    cargarDesdeArchivo(ListaAlumnos,NOM_ARCHIVO);
+                    break;
+                case 2:
+                   ListaAux=ListarPorEdad(ListaAlumnos,) 
+                
+                break;
+                case 3:
+                opcion='N';
+                break;
 
             }//fin switc
 

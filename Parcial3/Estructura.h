@@ -10,6 +10,11 @@ typedef struct
 }eAlumno;
 
 
+//ArrayList* ListarPorEdad(ArrayList *this,int (*pFunc)(void* ,void*));
+ArrayList* clonaOrdenado(ArrayList *this,int (*pFunc)(void* ,void*),int orden);
+ArrayList* ListarPorEdad(ArrayList *this,int orden);
+void MostrarElemento(ArrayList *this,int desde, int hasta);
+int Muestra1UnElemento(eAlumno * record);
 
 
 
