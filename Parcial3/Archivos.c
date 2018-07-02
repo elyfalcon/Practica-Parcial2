@@ -139,14 +139,14 @@ int parserEmployee(FILE* pFile, ArrayList* this)
     return retorno;
 
 }
-int cargarDesdeArchivo(ArrayList *this,const char *nombre)
+int cargarDesdeArchivo(ArrayList *this,const char* nombre)
 {
 	int flag = 0;
 	FILE *pArchivo;
 
-    if(this !=NULL)
+    if(this !=NULL && nombre !=NULL)
     {
-        pArchivo=fopen(nombre, "r");
+        pArchivo=fopen(nombre,"r");
         if(pArchivo != NULL)
         {
             flag=0;
@@ -161,13 +161,16 @@ int cargarDesdeArchivo(ArrayList *this,const char *nombre)
     }
         if(flag ==1)
         {
-	    printf("Carga Correcta:");
+	    printf("Carga Correcta:\n");
+	    system("pause");
         }
         else
-            printf("No se pudo cargar");
+        {
+            printf("No se pudo cargar\n");
+            system("pause");
+        }
+
 
 	return flag;
-
-
 
 }

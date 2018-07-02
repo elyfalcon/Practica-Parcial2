@@ -20,20 +20,20 @@ int main()
 
         while(seguir=='S')
         {
-        ShowMenu("1: Cargar el archivo\n2: Listar ordenados por edad\n");
-        scanf("%d",&opcion);
-        ValidaMenu(opcion,1,2);
-        switch(opcion)
-        {
-        case 1:
-            cargarDesdeArchivo(ListaAlumnos,NOM_ARCHIVO);
-            break;
-        case 2:
+            ShowMenu("1: Cargar el archivo\n2: Listar ordenados por edad\n");
+            scanf("%d",&opcion);
+            ValidaMenu(opcion,1,2);
+            switch(opcion)
+            {
+                case 1:
+                cargarDesdeArchivo(ListaAlumnos,NOM_ARCHIVO);
+                break;
+                case 2:
 
-            break;
-        case 3:
-            opcion='N';
-            break;
+                break;
+                case 3:
+                opcion='N';
+                break;
 
             }//fin switc
 

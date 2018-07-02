@@ -26,7 +26,7 @@
 	"ArrayList.h"
 	"Dato.h"
 
-1530486655 source:c:\eli\utn\2do parcial\parcial3\main.c
+1530490326 source:c:\eli\utn\2do parcial\parcial3\main.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"
@@ -38,9 +38,9 @@
 
 1530482029 c:\eli\utn\2do parcial\parcial3\estructura.h
 
-1530486655 c:\eli\utn\2do parcial\parcial3\archivos.h
+1530490295 c:\eli\utn\2do parcial\parcial3\archivos.h
 
-1530487772 source:c:\eli\utn\2do parcial\parcial3\archivos.c
+1530490295 source:c:\eli\utn\2do parcial\parcial3\archivos.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"
